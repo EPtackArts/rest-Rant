@@ -10,7 +10,7 @@ function index (data) {
             {place.cuisines}
             </p>
           <img src={place.pic} alt={place.name} height="300px"/>
-          <div>
+          <div className="photo">
             Photo by <a href={place.cite}> {place.photographer}</a> on <a href={place.unsplash}>Unsplash</a>
         </div>
           <p className="text-center">
