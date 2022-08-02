@@ -12,7 +12,6 @@ app.use(express.static('public'))
 app.use(express.urlencoded({extended: true}))
 app.use('/places', require('./controllers/places'))
 
-
 //Routes
 app.get('/', (req, res) => {
     res.render('home')
