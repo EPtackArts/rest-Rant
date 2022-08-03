@@ -4,6 +4,9 @@ body {
 h1 {
     color: cornflowerblue;
 }
+h2{
+    color: #dbb64f;
+}
 nav {
     background-color: cornflowerblue;
     padding: 10px;
