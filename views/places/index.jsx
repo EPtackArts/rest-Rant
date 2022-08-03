@@ -5,14 +5,16 @@ function index (data) {
     let placesFormatted = data.places.map((place) => {
       return (
         <div className='col-sm-6'>
-          <h2>{place.name}</h2>
+          <h2>
+            <a href={`/places/${index}`}>{place.name}</a>
+          </h2>
           <p className="text-center">
             {place.cuisines}
             </p>
-          <img src={place.pic} alt={place.name} height="300px"/>
-          <div className="photo">
+          <img id="placepic" src={place.pic} alt={place.name}/>
+          {/* <div className="photo">
             Photo by <a href={place.cite}> {place.photographer}</a> on <a href={place.unsplash}>Unsplash</a>
-        </div>
+        </div> */}
           <p className="text-center">
             Located in {place.city}, {place.state}
           </p>
