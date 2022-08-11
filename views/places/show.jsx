@@ -2,17 +2,27 @@ const React = require('react')
 const Def = require('../default')
 
 function show(data) {
+  let message = ' '
+    if (data.message) {
+      message = (
+        <h4 className="alert-danger"> {data.message}</h4>
+      )
+    }
     return (
       <Def>
         <main>
           <h1>{data.place.name}</h1>
           <div>
             <img id="placepic" src={data.place.pic} alt={data.place.name}/>
+            <h3>
+              Located in {data.place.city}, {data.place.state}
+            </h3>
             <h2>Rating</h2>
             <p>Not Rated</p>
           </div>
           <div>
             <h2>Description</h2>
+            <h3> {data.place.showEstablished} </h3>
             <p className="text-center">
             {data.place.cuisines} <br/> Located in {data.place.city}, {data.place.state}
             </p>
