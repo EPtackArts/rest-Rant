@@ -10,7 +10,7 @@ async function seed() {
     })
     place.comments.push(comment.id)
     await place.save()
-    process.exit
+    process.exit()
 }
 
 seed()
